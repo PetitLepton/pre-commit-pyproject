@@ -3,9 +3,12 @@ profile = "black"
 skip=["to_be_left_untouched.py"]
 
 # Sections
-sections = FUTURE,STDLIB,THIRDPARTY,APPLICATION,LOCALFOLDER
-import_heading_future = Future
-import_heading_stdlib = Built-in
-import_heading_thirdparty = Third-party
-import_heading_application = Application
-import_heading_localfolder = Local
+sections = "FUTURE,STDLIB,THIRDPARTY,APPLICATION,LOCALFOLDER"
+import_heading_future = "Future"
+import_heading_stdlib = "Built-in"
+import_heading_thirdparty = "Third-party"
+import_heading_application = "Application"
+import_heading_localfolder = "Local"
+
+[tool.black]
+force-exclude="""to_be_left_untouched.py"""
